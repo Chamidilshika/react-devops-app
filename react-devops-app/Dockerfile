@@ -8,7 +8,9 @@ RUN npm install
 
 COPY . .
 
-RUN npm install -g server
+RUN npm run build
+
+RUN npm install -g serve
 
 EXPOSE 3000
 
