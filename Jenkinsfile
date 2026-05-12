@@ -6,7 +6,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 git branch: 'main',
-                git 'https://github.com/Chamidilshika/react-devops-app.git'
+                url: 'https://github.com/Chamidilshika/react-devops-app.git'
             }
         }
 
